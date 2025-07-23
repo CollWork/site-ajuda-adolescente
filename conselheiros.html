@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conselheiros</title>
+  <link rel="stylesheet" href="estilo/style.css" />
+</head>
+
+<body>
+  <header class="top-header">
+    <h1>Nossos Conselheiros</h1>
+  </header>
+
+  <div class="content-wrapper">
+    <div class="sidebar">
+      <h2>Portal</h2>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="conselheiros.html">Conselheiros</a>
+        <a href="feed.html">Feed</a>
+        <a href="videos.html">Vídeos</a>
+      </nav>
+    </div>
+
+    <div class="main">
+
+        <section class="cvv">
+            <h3>Contate o CVV</h3>
+            <p class="cvv-sub">Centro de Valorização da Vida</p>
+            
+            <div class="cvv-bloco">
+                <img src="imagens/cvv.png" alt="Ícone CVV">
+
+                <div>
+                    <p>Você pode conversar com alguém agora, sem explicar tudo, sem ser julgado e sem dizer seu nome. O CVV está disponível 24 horas por dia pelo telefone 188. É gratuito e sigiloso.</p>
+                    <h3>📞 188</h3>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="conselheiros">
+            <h2>Conheça nossos conselheiros</h2>
+
+            <button id="toggleExpand" class="button toggle-button">Expandir cartões</button>
+
+            <div class="grid-conselheiros">
+                <div class="card-conselheiro">
+                    <img src="imagens/professor1.jpg" alt="Foto do professor Matheus" />
+                    <h3>Matheus Nascimento Teixeira</h3>
+
+                    <div class="detalhes">
+                        <p><strong>Idade:</strong> 28</p>
+                        <p><strong>Trauma Adolescente:</strong> Bullying por ser "nerd"</p>
+                        <p><strong>Especialidade:</strong> Ansiedade e insegurança</p>
+                        <p><strong>WhatsApp:</strong> (11) 9xxxx-xxxx</p>
+                        <p><strong>Sobre mim:</strong> Gosto de ser amigável com todo mundo, e não tenho muitos hobbies, então vou conseguir te responder rápido.</p>
+                        <p><em>“Você não precisa ser forte o tempo todo. Só verdadeiro.”</em></p>
+                    </div>
+                </div>
+
+                <div class="card-conselheiro">
+                    <img src="imagens/professor2.jpg" alt="Foto do professor Will" />
+                    <h3>William Araújo</h3>
+
+                    <div class="detalhes">
+                        <p><strong>Idade:</strong> 34</p>
+                        <p><strong>Trauma Adolescente:</strong> Discriminação pela minha origem</p>
+                        <p><strong>Especialidade:</strong> Depressão e Descontrole Emocional</p>
+                        <p><strong>WhatsApp:</strong> (11) 9xxxx-xxxx</p>
+                        <p><strong>Sobre mim:</strong> Sou de origem humilde, corri contra a correnteza e agora eu tô aqui, pra te dizer eu posso já ter passado pelo mesmo que você, e sei como fugir disso.</p>
+                        <p><em>“E me vendo no buraco, o Soldado pulou junto a mim e disse: 'Eu já estive aqui uma vez, e sei como sair deste buraco.'”</em></p>
+                    </div>
+                </div>
+
+                <div class="card-conselheiro">
+                    <img src="imagens/professor3.jpg" alt="Foto da professora Mariana" />
+                    <h3>Mariana Oliveira</h3>
+
+                    <div class="detalhes">
+                        <p><strong>Idade:</strong> 31</p>
+                        <p><strong>Trauma Adolescente:</strong> Pressão familiar por perfeição</p>
+                        <p><strong>Especialidade:</strong> Autocobrança e exaustão emocional</p>
+                        <p><strong>WhatsApp:</strong> (11) 9xxxx-xxxx</p>
+                        <p><strong>Sobre mim:</strong> Já me cobrei tanto que esqueci quem eu era de verdade. Hoje quero lembrar você que tudo bem não ser perfeito.</p>
+                        <p><em>“Você é muito mais que suas notas, suas falhas ou suas obrigações.”</em></p>
+                    </div>
+                </div>
+
+                <div class="card-conselheiro">
+                    <img src="imagens/professor4.jpg" alt="Foto da professora Júlia" />
+                    <h3>Júlia Fernanda Gomes</h3>
+
+                    <div class="detalhes">
+                        <p><strong>Idade:</strong> 36</p>
+                        <p><strong>Trauma Adolescente:</strong> Gravidez não planejada na adolescência</p>
+                        <p><strong>Especialidade:</strong> Medo do futuro e julgamentos sociais</p>
+                        <p><strong>WhatsApp:</strong> (11) 9xxxx-xxxx</p>
+                        <p><strong>Sobre mim:</strong> Fui mãe muito cedo. Passei pelo medo, pelas dúvidas e por olhares que doem. Hoje, quero te lembrar que sua vida não acabou, ela só está começando de um jeito diferente.</p>
+                        <p><em>“Ser forte não é aguentar tudo sozinha. É pedir ajuda quando precisa.”</em></p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+  </div>
+  
+
+
+
+  <div class="chatbot-container">
+    <div class="chatbot-icon" onclick="toggleChat()">
+        💬
+    </div>
+
+    <div class="chatbot-window" id="chatWindow">
+    <div class="chatbot-header">
+        Apoio Virtual
+        <span onclick="toggleChat()">✖</span>
+    </div>
+
+    <div class="chatbot-body">
+        <p><strong>Bot:</strong> Oi! Tá tudo bem por aí?</p>
+        <p><strong>Você:</strong> Não muito...</p>
+        <p><strong>Bot:</strong> Tudo bem. Você quer conversar com um conselheiro?</p>
+    </div>
+  </div>
+
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

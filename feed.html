@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feed de Apoio</title>
+  <link rel="stylesheet" href="estilo/style.css" />
+</head>
+<body>
+  <header class="top-header">
+    <h1>Feed de Apoio</h1>
+  </header>
+
+  <div class="content-wrapper">
+    <div class="sidebar">
+      <h2>Portal</h2>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="conselheiros.html">Conselheiros</a>
+        <a href="feed.html">Feed</a>
+        <a href="videos.html">Vídeos</a>
+      </nav>
+    </div>
+
+    <div class="main">
+      <section class="feed">
+        <h2>Últimas Publicações</h2>
+        <div class="post">
+          <h3>Você não precisa dar conta de tudo</h3>
+          <p class="autor">Por Ana Beatriz Mendes</p>
+          <p class="resumo">Tem dias em que tudo pesa. E tudo bem. Isso não significa que você falhou...</p>
+        </div>
+
+        <div class="post">
+          <h3>Como lidar com a cobrança interna</h3>
+          <p class="autor">Por Rafael Nogueira</p>
+          <p class="resumo">Ser seu pior crítico pode te impedir de enxergar o </p>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+
+  <div class="chatbot-container">
+    <div class="chatbot-icon" onclick="toggleChat()">
+        💬
+    </div>
+
+    <div class="chatbot-window" id="chatWindow">
+    <div class="chatbot-header">
+        Apoio Virtual
+        <span onclick="toggleChat()">✖</span>
+    </div>
+
+    <div class="chatbot-body">
+        <p><strong>Bot:</strong> Oi! Tá tudo bem por aí?</p>
+        <p><strong>Você:</strong> Não muito...</p>
+        <p><strong>Bot:</strong> Tudo bem. Você quer conversar com um conselheiro?</p>
+    </div>
+  </div>
+
+
+  <script src="scripts/main.js"></script>
+</body>
